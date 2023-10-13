@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
 *{
     box-sizing: border-box;
     font-family: 'Work Sans';
@@ -5,6 +6,9 @@
     padding: 0;
 }
 
+html{
+    background: #1e2326;
+}
 /* MENU */
 .contenedor-header{
     background: #1e2326;
@@ -192,7 +196,7 @@
 
 footer{
     background-color: #252A2E;
-    color: #0ec351;
+    color: #fff;
     padding: 50px 0 30px 0;
     text-align: center;
     position: relative;
