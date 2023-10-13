@@ -1,12 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <h1>Bienvenidos a nuestro sitio</h1>
-    <h2>Les saluda su amigo Nor</h2>
+    <!-- <h1>Bienvenidos a nuestro sitio</h1>
+    <h2>Les saluda su amigo Nor</h2> -->
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">PORTFOLIO</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="">PORTFOLIO</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/norb.jpg" alt="">
+            </div>
+            <h1>NORBERTO</h1>
+            <h2>Desarrollador de Software</h2>
+        </div>
+        <div id="sobremi" class="sobremi">
+            <div class="contenido-seccion">
+                <h2>Sobre Mí</h2>
+                <p><span>Hola, soy Norberto Quispe.</span> Vivo en La Paz, estudie informatica industrial, trabajo como consultor en tecnologias de la información. Me apasiona programar para diferentes plataformas. 
+                    En mis tiempos libres toco guitarra, juego ajedrez y paso tiempo con mi familia.
+                </p>
+    
+                <div class="fila">
+                    <!-- datos personales -->
+                    <div class="col">
+                        <h3>Datos Personales</h3>
+                        <ul>
+                            <li>
+                                <strong>Teléfono</strong>
+                                7655xxxx
+                            </li>
+                            <li>
+                                <strong>Email</strong>
+                                norberto.quispe@uab.edu.bo
+                            </li>
+                            <li>
+                                <strong>Website</strong>
+                                https://uni-nor.github.io/proyecto.github.io/
+                            </li>
+                            <li>
+                                <strong>Dirección</strong>
+                                Zona Norte, La Paz - Bolivia 
+                            </li>
+                            <li>
+                                <strong>Cargo</strong>
+                                <span>FREELANCE</span>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <!-- intereses -->
+                    <div class="col">
+                        <h3>Intereses</h3>
+                        <div class="contenedor-intereses">
+                            <div class="interes">
+                                <i class="fa-solid fa-gamepad"></i>
+                                <span>JUEGOS</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-headphones"></i>
+                                <span>MUSICA</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-plane"></i>
+                                <span>VIAJAR</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-person-hiking"></i>
+                                <span>DEPORTE</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-book"></i>
+                                <span>LIBROS</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-car"></i>
+                                <span>AUTOS</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-camera"></i>
+                                <span>FOTOS</span>
+                            </div>
+
+                            <div class="interes">
+                                <i class="fa-brands fa-apple"></i>
+                                <span>OTROS</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+   
+    <!-- footer -->
+    <footer> Norberto &copy; Copyright 2023 
+
+    </footer>
+
 </body>
 </html>
