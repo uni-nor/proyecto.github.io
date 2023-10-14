@@ -6,12 +6,10 @@
     padding: 0;
 }
 
-html{
-    background: #1e2326;
-}
+
 /* MENU */
 .contenedor-header{
-    background: #1e2326;
+    background: #0b1921;
     position: fixed;
     width: 100%;
     top: 0;
@@ -26,11 +24,10 @@ html{
     align-items: center;
     padding: 15px 20px;
 }
-.contenedor-header header .logo a{
-    font-family: 'Times New Roman';
-    font-size: 50px;
-    color: #4488d5;
-    text-decoration: none;
+.contenedor-header header .logo {
+    display: inline;
+    color: #05c3f8c0;
+    font-size: 25px;
 }
 .contenedor-header header ul{
     display: flex;
@@ -48,17 +45,17 @@ html{
     color: #05c3f8;
 }
 .nav-responsive{
-    background-color: #4488d5;
+    background-color: #0d4e778a;
     color:#fff;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
     display: none;
 }
+
+
 /* SECCION INICIO*/
 .inicio{
-    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
-    url(img/fondo.jpg);
     background-size: cover;
     height: 100vh;
     color: #fff;
@@ -67,15 +64,15 @@ html{
 }
 .inicio .contenido-banner{
     padding: 20px;
-    background-color: #1e2326;
+    background-color: rgba(0, 11, 12, 0.5);
     max-width: 350px;
     margin: auto;
     text-align: center;
-    border-radius: 40px;
+    border-radius: 50px;
 }
 .inicio .contenido-banner img{
     margin-top: 40px;
-    border: 10px solid #4488d5;
+    border: 10px solid #0d4e778a;
     display: block;
     width: 80%;
     margin: auto;
@@ -92,7 +89,7 @@ html{
 }
 
 .sobremi{
-    background-color: #1e2326;
+    /* background-color: #1e2326; */
     color: #fff;
     padding: 50px 20px;
 }
@@ -113,7 +110,7 @@ html{
     margin-bottom: 20px;
 }
 .sobremi .contenido-seccion p span{
-    color: #4488d5;
+    color: #05c3f8;
     font-weight: bold;
 }
 .sobremi .fila{
@@ -136,11 +133,11 @@ html{
 }
 .sobremi .fila .col ul li strong{
     display: inline-block;
-    color: #4488d5;
+    color: #05c3f8;
     width: 130px;
 }
 .sobremi .fila .col ul li span{
-    background-color: #4488d5;
+    background-color: #0e0e0fa8;
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
@@ -161,11 +158,12 @@ html{
     justify-content: center;
     transition: .3s;
 }.sobremi .fila .col .contenedor-intereses .interes:hover{
-    background-color: #4488d5;
+    background-color: #0d4e77;
 }
 .sobremi .fila .col .contenedor-intereses .interes i{
     font-size: 30px;
     margin-bottom: 10px;
+    color:#05c3f8;
 }
 .sobremi button{
     cursor: pointer;
@@ -186,7 +184,7 @@ html{
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #4488d5;
+    background-color: #0d4e77;
     z-index: -1;
     transition: 1s;
 }
@@ -195,7 +193,7 @@ html{
 }
 
 footer{
-    background-color: #252A2E;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0, 0, 0, 1)),url(img/fondo1.jpg);
     color: #fff;
     padding: 50px 0 30px 0;
     text-align: center;
@@ -203,3 +201,51 @@ footer{
     width: 100%;
 }
 
+
+.grupo1{
+    background: linear-gradient(to top, rgba(12, 14, 19,  0.80), rgba(40, 41, 41,0.9)),url(img/fondo.jpg);
+    display: grid;
+    grid-template-columns:  1fr 2fr;
+}
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width:840px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 50px;
+        background-color: rgba(0, 11, 12, 0.3);
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+    .grupo1{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width:700px){
+    .inicio .contenido-banner{
+        display: block;
+        width: fit-content;
+    }    
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+}

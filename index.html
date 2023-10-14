@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
+    <link rel="shortcut icon" href="img/favicon.png">
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
@@ -14,38 +15,43 @@
     <div class="contenedor-header">
         <header>
             <div class="logo">
-                <a href="#">PORTFOLIO</a>
+                
+                <i class="fa-solid fa-computer"></i>
+                <!-- <img src="img/favicon.png" alt="logo" width="100" height="100"> -->
             </div>
             <nav id="nav">
                 <ul>
                     <li><a href="#inicio" onclick="">INICIO</a></li>
                     <li><a href="#sobremi" onclick="">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="">SKILLS</a></li>
                     <li><a href="#curriculum" onclick="">CURRICULUM</a></li>
                     <li><a href="#portfolio" onclick="">PORTFOLIO</a></li>
-                    
                 </ul>
             </nav>
+            <div class="nav-responsive" onclick='document.getElementById("nav").classList =document.getElementById("nav").classList==""?"responsive":"";'>
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </header>
     </div>
 
     <!-- SECCION INICIO -->
-    <section id="inicio" class="inicio">
-        <div class="contenido-banner">
-            <div class="contenedor-img">
-                <img src="img/norb.jpg" alt="">
+    <div class="grupo1">
+        <section id="inicio" class="inicio">
+            <div class="contenido-banner">
+                <div class="contenedor-img">
+                    <img src="img/norb.jpg" alt="">
+                </div>
+                <h1>NORBERTO</h1>
+                <h2>Desarrollador de Software</h2>
             </div>
-            <h1>NORBERTO</h1>
-            <h2>Desarrollador de Software</h2>
-        </div>
+        </section>
 
-        <div id="sobremi" class="sobremi">
+        <section id="sobremi" class="sobremi">
             <div class="contenido-seccion">
                 <h2>Sobre Mí</h2>
-                <p><span>Hola, soy Norberto Quispe.</span> Vivo en La Paz, estudie informatica industrial, trabajo como consultor en tecnologias de la información. Me apasiona programar para diferentes plataformas. 
+                <p><span>Hola, me llamo Norberto.</span> Vivo en La Paz, estudie informatica industrial, trabajo en tecnologias de la información. Me apasiona programar para diferentes plataformas. 
                     En mis tiempos libres toco guitarra, juego ajedrez y paso tiempo con mi familia.
                 </p>
-    
+
                 <div class="fila">
                     <!-- datos personales -->
                     <div class="col">
@@ -69,11 +75,11 @@
                             </li>
                             <li>
                                 <strong>Cargo</strong>
-                                <span>FREELANCE</span>
+                                <span>Developer</span>
                             </li>
                         </ul>
                     </div>
-    
+
                     <!-- intereses -->
                     <div class="col">
                         <h3>Intereses</h3>
@@ -102,7 +108,7 @@
                                 <i class="fa-solid fa-camera"></i>
                                 <span>FOTOS</span>
                             </div>
-    
+
                         </div>
                     </div>
                 </div>
@@ -111,12 +117,19 @@
                     <span class="overlay"></span>
                 </button>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
+    
     <!-- footer -->
     <footer> Norberto &copy; Copyright 2023 
-
+            
     </footer>
-
+    <script>
+        
+        //Función que oculta o muestra el menu
+        // function mostrarOcultarMenu(){
+        //     document.getElementById("nav").classList =document.getElementById("nav").classList==""?"responsive":"";
+        // }
+    </script>
 </body>
 </html>
