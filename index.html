@@ -22,8 +22,7 @@
                 <ul>
                     <li><a href="#inicio" onclick="">INICIO</a></li>
                     <li><a href="#sobremi" onclick="">SOBRE MI</a></li>
-                    <li><a href="#curriculum" onclick="">CURRICULUM</a></li>
-                    <li><a href="#portfolio" onclick="">PORTFOLIO</a></li>
+                    <li><a href="#copyright" onclick="">COPYRIGHT</a></li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick='document.getElementById("nav").classList =document.getElementById("nav").classList==""?"responsive":"";'>
@@ -32,8 +31,9 @@
         </header>
     </div>
 
-    <!-- SECCION INICIO -->
-    <div class="grupo1">
+    
+    <div class="contenido-datos">
+        <!-- SECCION INICIO -->
         <section id="inicio" class="inicio">
             <div class="contenido-banner">
                 <div class="contenedor-img">
@@ -43,11 +43,11 @@
                 <h2>Desarrollador de Software</h2>
             </div>
         </section>
-
+        <!-- SECCION INFORMACION SOBRE MI -->
         <section id="sobremi" class="sobremi">
             <div class="contenido-seccion">
                 <h2>Sobre Mí</h2>
-                <p><span>Hola, me llamo Norberto.</span> Vivo en La Paz, estudie informatica, trabajo en tecnologias de la información. Me apasiona programar para diferentes plataformas. 
+                <p><span>Hola, me llamo Norberto.</span> Vivo en La Paz, estudie informática, trabajo en tecnologias de la información. Me apasiona programar para diferentes plataformas. 
                     En mis tiempos libres toco guitarra, juego ajedrez y paso tiempo con mi familia.
                 </p>
 
@@ -111,24 +111,17 @@
                         </div>
                     </div>
                 </div>
-                <button>
+                <a href="docs/CV.docx">
                     Descargar CV <i class="fa-solid fa-download"></i>
                     <span class="overlay"></span>
-                </button>
+                </a>
             </div>
         </section>
     </div>
     
     <!-- footer -->
-    <footer> Norberto &copy; Copyright 2023 
+    <footer id="copyright"> Norberto &copy; Copyright 2023 
             
     </footer>
-    <script>
-        
-        //Función que oculta o muestra el menu
-        // function mostrarOcultarMenu(){
-        //     document.getElementById("nav").classList =document.getElementById("nav").classList==""?"responsive":"";
-        // }
-    </script>
 </body>
 </html>
